@@ -37,7 +37,7 @@ def main():
   if force or (os.environ.has_key('AGENT_SLEEP') and int(os.environ['AGENT_SLEEP'])):
     print "shutdown"
     platform = platforms[sys.platform]
-    globals()[ 'shutdown_%s' % (platform,) ]()
+    globals()[ 'sleep_%s' % (platform,) ]()
 
 if __name__ == '__main__':
   main()
