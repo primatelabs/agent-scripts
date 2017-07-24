@@ -15,7 +15,7 @@ def sleep_macosx():
 
 def sleep_windows():
   subprocess.call([
-    'reg.exe', 'ADD', '"HKCU\Software\Sysinternals\PsShutdown"',
+    'reg.exe', 'ADD', 'HKCU\Software\Sysinternals\PsShutdown',
     '/v', 'EulaAccepted',
     '/t', 'REG_DWORD',
     '/d', '1',
