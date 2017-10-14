@@ -7,10 +7,10 @@
 import os, subprocess, sys
 
 def shutdown_linux():
-  subprocess.call(['sudo', 'shutdown', '-h'])
+  subprocess.call(['sudo', 'shutdown', '-h', 'now'])
 
 def shutdown_macosx():
-  subprocess.call(['sudo', 'shutdown', '-h'])
+  subprocess.call(['sudo', 'shutdown', '-h', 'now'])
 
 def shutdown_windows():
   subprocess.call([
